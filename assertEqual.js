@@ -3,9 +3,9 @@ const redMark = '\u{1F6D1}';
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
-    console.log(checkMark + checkMark + checkMark + `Assertion Passed: ${actual} === ${expected}`);
+    console.log(`${checkMark}${checkMark}${checkMark}Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.error(redMark + redMark + redMark + `Assertion Failed: ${actual} !== ${expected}`);
+    console.error(`${redMark}${redMark}${redMark}Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
