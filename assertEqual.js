@@ -1,7 +1,7 @@
-const checkMark = '\u2705';
-const redMark = '\u{1F6D1}';
 const assertEqual = function(actual, expected) {
-
+  const checkMark = '\u2705';
+  const redMark = '\u{1F6D1}';
+  
   if (actual === expected) {
     console.log(`${checkMark}${checkMark}${checkMark}Assertion Passed: ${actual} === ${expected}`);
   } else {
