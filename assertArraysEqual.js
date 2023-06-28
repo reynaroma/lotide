@@ -1,11 +1,11 @@
-const checkMark = '\u2705';
-const redMark = '\u{1F6D1}';
-const assertArraysEqual = function(arr1, arr2) {
-
-  if (eqArrays(arr1, arr2)) {
-    console.log(`${checkMark}${checkMark}${checkMark}Arrays are equal: ${arr1} === ${arr2}`);
+const assertArraysEqual = function(actual, expected) {
+  const checkMark = '\u2705';
+  const redMark = '\u{1F6D1}';
+  
+  if (eqArrays(actual, expected)) {
+    console.log(`${checkMark}${checkMark}${checkMark}Arrays are equal: ${actual} === ${expected}`);
   } else {
-    console.error(`${redMark}${redMark}${redMark}Arrays are not equal: ${arr1} !== ${arr2}`);
+    console.error(`${redMark}${redMark}${redMark}Arrays are not equal: ${actual} !== ${expected}`);
   }
 };
 
