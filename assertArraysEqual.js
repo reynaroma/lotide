@@ -1,8 +1,9 @@
+const eqArrays = require('../lotide/eqArrays')
 const assertArraysEqual = function(actual, expected) {
   const checkMark = '\u2705';
   const redMark = '\u{1F6D1}';
   
-  if (actual === expected) {
+  if (eqArrays(actual, expected)) {
     console.log(`${checkMark}${checkMark}${checkMark}Arrays are equal: ${actual} === ${expected}`);
   } else {
     console.error(`${redMark}${redMark}${redMark}Arrays are not equal: ${actual} !== ${expected}`);
@@ -22,10 +23,10 @@ const assertArraysEqual = function(actual, expected) {
     }
   }
   return true;
-};*/
+};
 
 // assertArraysEqual([1, 2, 3], [1, 2, 3]);
 // assertArraysEqual([1, 2, 3], [3, 2, 1]);
 // assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-// assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
+// assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);*/
 module.exports = assertArraysEqual;

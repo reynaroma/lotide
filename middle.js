@@ -1,4 +1,4 @@
-const eqArrays = function(arr1, arr2) {
+/*const eqArrays = function(arr1, arr2) {
   // check if the lengths of array are equal
   if (arr1.length !== arr2.length) {
     return false;
@@ -11,7 +11,7 @@ const eqArrays = function(arr1, arr2) {
     }
   }
   return true;
-}
+};
 
 const assertArraysEqual = function(actual, expected) {
   const checkMark = '\u2705';
@@ -22,7 +22,7 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     console.error(`${redMark}${redMark}${redMark}Arrays are not equal: ${actual} !== ${expected}`);
   }
-};
+};*/
 
 const middle = function(arr) {
   let result = [];
@@ -47,11 +47,12 @@ const middle = function(arr) {
   return result
 };
 
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
-console.log(middle([1, 2, 3])); // => [2]
-console.log(middle([1, 2, 3, 4, 5])); // => [3]
-console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]()
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+// assertArraysEqual(middle([1]), []); // => []
+// assertArraysEqual(middle([1, 2]), []); // => []
+// assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
+// assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
+// assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
+// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]()
+// assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = middle;
