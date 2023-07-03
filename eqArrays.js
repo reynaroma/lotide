@@ -1,4 +1,4 @@
-const checkMark = '\u2705';
+/*const checkMark = '\u2705';
 const redMark = '\u{1F6D1}';
 const assertEqual = function(actual, expected) {
 
@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   } else {
     console.error(`${redMark}${redMark}${redMark}Assertion Failed: ${actual} !== ${expected}`);
   }
-};
+};*/
 
 const eqArrays = function(arr1, arr2) {
   // check if the lengths of array are equal
@@ -24,8 +24,9 @@ const eqArrays = function(arr1, arr2) {
   return true;
 }
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => false
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
+// assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => false
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => false
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => false
+module.exports = eqArrays;
