@@ -12,3 +12,5 @@ function reverseString(str) {
   }
   return result;
 };
+
+module.exports = reverseString;

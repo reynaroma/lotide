@@ -1,13 +1,15 @@
-const assertEqual = function(actual, expected) {
-  const checkMark = '\u2705';
-  const redMark = '\u{1F6D1}';
+// const { it } = require("node:test");
+
+// const assertEqual = function(actual, expected) {
+//   const checkMark = '\u2705';
+//   const redMark = '\u{1F6D1}';
   
-  if (actual === expected) {
-    console.log(`${checkMark}${checkMark}${checkMark}Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.error(`${redMark}${redMark}${redMark}Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+//   if (actual === expected) {
+//     console.log(`${checkMark}${checkMark}${checkMark}Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.error(`${redMark}${redMark}${redMark}Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 
 const countLetters = function(str) {
   let result = {};
@@ -21,8 +23,10 @@ const countLetters = function(str) {
   return result;
 };
 
-const result1 = countLetters('LHLAAA');
-assertEqual(result1['L'], 2);
-assertEqual(result1['H'], 1);
-assertEqual(result1['A'], 2);
-console.log(countLetters('lighthouse in the house'))
+// const result1 = countLetters('LHLAAA');
+// assertEqual(result1['L'], 2);
+// assertEqual(result1['H'], 1);
+// assertEqual(result1['A'], 2);
+// assertEqual(result1['O'], undefined);
+// console.log(countLetters('lighthouse in the house'))
+module.exports = countLetters;
