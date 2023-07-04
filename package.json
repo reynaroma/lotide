@@ -1,0 +1,29 @@
+{
+  "name": "@reynaroma/lotide",
+  "version": "1.0.0",
+  "description": "from manual testing to real testing framework",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reynaroma/lotide.git"
+  },
+  "keywords": [
+    "lotide"
+  ],
+  "author": "Reyna May Roma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reynaroma/lotide/issues"
+  },
+  "homepage": "https://github.com/reynaroma/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}
